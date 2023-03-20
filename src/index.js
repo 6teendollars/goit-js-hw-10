@@ -51,7 +51,7 @@ function searchCountry(e) {
       ref.countryInfo.innerHTML = `<div class='container'>
                 <img class='country-flag' alt=${name.official} src='${
         flags.svg
-      }' width=70 height=50>
+      }' width=70>
                 <h1 class='country-title'>${name.official}</h1>
             </div>
             <p><span class='title-info'>Capital:</span> ${capital}</p>
