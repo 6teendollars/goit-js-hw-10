@@ -17,11 +17,11 @@ function searchCountry(e) {
   const search = e.target.value.trim();
   if (search !== '') {
     fetchCountries(search)
-      .then(renderMarkup)
+      .then(markup)
       .catch(error => console.log(error));
   }
 
-  function renderMarkup(countries) {
+  function markup(countries) {
     ref.countryList.innerHTML = '';
     ref.countryInfo.innerHTML = '';
 
